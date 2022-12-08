@@ -1,5 +1,5 @@
-#include "graphics.h"
-#include "control.h"
+#include <graphics.h>
+#include <control.h>
 
 Control controls[N_CONTROLS];
 
