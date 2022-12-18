@@ -47,7 +47,7 @@ int main()
             delay(100);
             break;
          case DECREASE_N:
-            if(N>4)
+            if(N>3)
                N--;
             show_number(N,1);
             delay(100);

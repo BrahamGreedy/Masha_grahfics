@@ -1,0 +1,35 @@
+# control.h task.h
+!control.cpp control.h graphics.h keys_n_colors.h #<#>
+!main.cpp cctype cerrno clocale control.h cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception fstream graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.h type_traits typeinfo utility vector wchar.h wctype.h #<#>
+!task.cpp cctype cerrno clocale control.h cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception fstream graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.h type_traits typeinfo utility vector wchar.h wctype.h #<#>
+!task.h cctype cerrno clocale control.h cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception fstream graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h math.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error type_traits typeinfo utility vector wchar.h wctype.h #<#>
+ struct@Control _type_ #<control.h>
+HEIGHT #<control.h>
+Polyhedron _type_ #<task.h>
+Polyhedron() #<task.h>
+WIDTH #<control.h>
+control_values : enum #<control.h>
+controls : Control[] #<control.cpp>
+create_control(int i, int left, int top) -> void #<control.cpp>
+create_control(int, int, int) -> void #<control.h>
+main() -> int #<main.cpp>
+save() -> void #<control.h>
+select_control() -> int #<control.h>
+set_bg(const char* name) -> void #<control.cpp>
+set_bg(const char*) -> void #<control.h>
+	Control::left : int #<control.h>
+	Control::top : int #<control.h>
+	Control::right : int #<control.h>
+	Control::bottom : int #<control.h>
+	Polyhedron:%I : int[] #<task.h>
+	Polyhedron:%J : int[] #<task.h>
+	Polyhedron:%K : int[] #<task.h>
+	Polyhedron:%p : int[] #<task.h>
+	Polyhedron:%surface_num : int #<task.h>
+	Polyhedron:%vertex_num : int #<task.h>
+	Polyhedron:%d : int[] #<task.h>
+	Polyhedron:%vertexs : vector #<task.h>
+	Polyhedron:%surfaces : vector #<task.h>
+	Polyhedron::rotate(int) -> void #<task.h>
+	Polyhedron::move(int, int) -> void #<task.h>
+	Polyhedron::draw(int) -> void #<task.h>

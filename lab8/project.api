@@ -1,0 +1,42 @@
+# controls.h task.h
+!controls.cpp controls.h graphics.h keys_n_colors.h #<#>
+!controls.h graphics.h keys_n_colors.h #<#>
+!main.cpp controls.h fstream graphics.h keys_n_colors.h string task.h vector #<#>
+!task.cpp controls.h fstream graphics.h keys_n_colors.h string task.h vector #<#>
+!task.h controls.h fstream graphics.h keys_n_colors.h string vector #<#>
+ struct@coord _type_ #<controls.h>
+Controls : enum #<controls.h>
+Figure_3d _type_ #<task.h>
+Figure_3d() #<task.h>
+HEIGHT #<controls.h>
+Point _type_ #<task.h>
+Point(int id, double x, double y, double z) #<task.h>
+Surface _type_ #<task.h>
+WIDTH #<controls.h>
+buttons : coord[] #<controls.cpp>
+create_bg(const char* file) -> void #<controls.cpp>
+create_bg(const char*) -> void #<controls.h>
+create_button(int n, int x, int y, const char* file) -> void #<controls.cpp>
+create_button(int, int, int, const char*) -> void #<controls.h>
+main() -> int #<main.cpp>
+save() -> void #<controls.h>
+select_control() -> int #<controls.h>
+	Figure_3d:%points : vector #<task.h>
+	Figure_3d:%surfaces : vector #<task.h>
+	Figure_3d:%center : vector #<task.h>
+	Figure_3d:%delta_center : vector #<task.h>
+	Figure_3d::draw(int, int, int) -> void #<task.h>
+	Figure_3d::move_to(int, int, int) -> void #<task.h>
+	Figure_3d::move(int) -> void #<task.h>
+	Figure_3d::rotate(int, double) -> void #<task.h>
+	Figure_3d::resize(double) -> void #<task.h>
+	Point::id : int #<task.h>
+	Point::x : double #<task.h>
+	Point::y : double #<task.h>
+	Point::z : double #<task.h>
+	Surface::ids : vector #<task.h>
+	Surface::Surface :  #<task.h>
+	coord::x1 : int #<controls.h>
+	coord::y1 : int #<controls.h>
+	coord::x2 : int #<controls.h>
+	coord::y2 : int #<controls.h>
